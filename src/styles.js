@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const AboutSection = styled.div`
 display: flex;
@@ -47,5 +48,21 @@ ul{
       cursor: pointer;
     }
   }
+}
+`;
+
+export const StyledLink = styled(Link)`
+text-decoration: none;
+padding: 3em 2em 1em 2em;
+color: white;
+&:focus, &:visited, &:link{
+  text-decoration: none;
+  } 
+&:hover{
+  color: black;
+  transition: all 0.5s ease;
+}
+&:active{
+  color: black;
 }
 `;

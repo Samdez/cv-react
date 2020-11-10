@@ -1,15 +1,21 @@
-import {Navbar} from '../styles'
+import { Navbar, StyledLink } from '../styles'
 
 const Nav = () => {
-  return ( 
+  return (
     <Navbar>
       <ul className="nav-list">
-        <li className="li-item">About me</li>
-        <li className="li-item">Experience</li>
-        <li className="li-item">Contact</li>
+        <li className="li-item">
+          <StyledLink to='/'>About me</StyledLink>
+        </li>
+        <li className="li-item">
+          <StyledLink to='/experience'>Experience</StyledLink>
+        </li>
+        <li className="li-item">
+        <StyledLink to='/contact'>Contact</StyledLink>  
+        </li>
       </ul>
     </Navbar>
-   );
+  );
 }
- 
+
 export default Nav;

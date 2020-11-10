@@ -11,6 +11,7 @@ body {
 background: linear-gradient(90deg, rgba(55,71,214,1) 0%, rgba(0,164,255,1) 100%);
   font-family: 'Poppins', sans-serif;
   line-height: 1.2rem;
+  letter-spacing: .1rem
 }
 h2 {
   font-weight: lighter;

@@ -12,7 +12,7 @@ const AboutMe = () => {
       <AboutSection>
         <div>
           <h2>From beatmaker...</h2>
-          <p>After studying jazz in prestigious music schools for years</p>
+          <p>After studying jazz in prestigious music schools</p>
           <p>I became a producer/composer/arranger</p>
           <p>and worked with many different genres.</p>
         </div>
@@ -81,6 +81,8 @@ align-items: center;
   }
   h3{
     font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 `;
 
