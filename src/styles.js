@@ -29,14 +29,23 @@ width: 50%;
 export const Navbar = styled.div`
 display: flex;
 justify-content: center;
+align-items: center;
+position: sticky;
+top: 0;
 ul{
   display: flex;
   width: 50%;
   justify-content: space-around;
-  align-items; color-interpolation-filters;
   list-style: none;
   li{
-    margin-top: 2em;
+    padding: 3em 2em 1em 2em;
+    color: white;
+    height: 100%;
+    &:hover{
+      color: black;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
   }
 }
 `;
