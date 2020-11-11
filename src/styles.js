@@ -80,5 +80,8 @@ flex-direction: column;
 align-items: flex-start;
 list-style: none;
 margin-left: 30%;
+h3{
+  color: white;
+}
 `;
 

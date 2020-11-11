@@ -1,14 +1,16 @@
+import {pageAnimation} from '../animation';
 import { AboutSection, IconContainer, Image, TitlesList } from '../styles'
 import meme404 from '../img/meme404.jpg'
 import styled from 'styled-components';
 import { FiGithub, FiInstagram } from 'react-icons/fi';
 import { FaSpotify } from 'react-icons/fa';
 import {GiDiploma} from 'react-icons/gi';
+import { motion } from 'framer-motion';
 
 
 const Experience = () => {
   return (
-    <>
+    <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
       <ExperienceSection>
         <Meme src={meme404} alt="" />
         <div>
@@ -24,8 +26,8 @@ const Experience = () => {
           <h2>As a musician and a teacher</h2>
           <p>I've accumulated over 10M streams with my solo project Otaam over the years</p>
           <p>and played hundreds of shows in France and in Europe.</p>
-          <p>I've been teaching guitar for private students</p>
-          <p>and in music schools (La note bleue, Vacquiers (2014/15); EMIVA, Auterive (2015/16)</p>
+          <p>I've teached guitar for private students</p>
+          <p>and in music schools (La note bleue, Vacquiers (2014/15); EMIVA, Auterive (2015/16))</p>
         </div>
         <IconContainer>
           <FaSpotify style={{ fontSize: '4rem' }} />
@@ -62,7 +64,7 @@ const Experience = () => {
           </li>
         </TitlesList>
       </div>
-    </>
+    </motion.div>
   );
 }
 

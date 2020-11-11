@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { AnimatePresence } from 'framer-motion';
 
 import AboutMe from "./components/AboutMe";
 import Experience from './components/Experience';
@@ -11,28 +11,26 @@ import GlobalStyle from './GlobalStyles';
 
 
 function App() {
+  const location = useLocation();
+  function ScrollToTop() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
+    return null;
+  }
   return (
     <div className="App">
       <GlobalStyle />
-      <Router>
-        <ScrollToTop /> 
+        <ScrollToTop />
         <Nav />
-        <Switch>
-          <Route exact path='/' component={AboutMe} />
-          <Route path='/experience' component={Experience} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
-      </Router>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={location} key={location.pathname}>
+            <Route exact path='/' component={AboutMe} />
+            <Route path='/experience' component={Experience} />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </AnimatePresence>
     </div>
   );
 }

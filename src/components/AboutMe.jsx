@@ -1,5 +1,8 @@
-import { useEffect } from 'react';
+
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
+
+import {pageAnimation} from '../animation';
 import { Image, AboutSection, IconsContainer, IconsSubContainer } from '../styles'
 import pic2 from '../img/pic2.jpg';
 import { IoLogoJavascript } from 'react-icons/io';
@@ -9,15 +12,27 @@ import { FaNode } from 'react-icons/fa';
 
 const AboutMe = () => {
 
+  const textAnim = {
+    hidden: {opacity: 0},
+    show: {opacity: 1, transition: {duration: 0.5}},
+    transition: {when:'beforeChildren'}
+  }
+  
+  const container = {
+    hidden: {x: 100},
+    show: {x: 0, transition: {duration: 1, ease: 'easeOut', staggerChildren: 0.25, when:'afterChildren'}} 
+  }
+ 
+
   return (
-    <>
+    <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
       <AboutSection>
-        <div>
-          <h2>From beatmaker...</h2>
-          <p>After studying jazz in prestigious music schools</p>
-          <p>I became a producer/composer/arranger</p>
-          <p>and worked with many different genres.</p>
-        </div>
+        <motion.div variants={container} initial='hidden' animate='show' className='hidden'>
+          <motion.h2 variants={textAnim} >From <span>beatmaker...</span></motion.h2>
+          <motion.p variants={textAnim} >After studying jazz in prestigious music schools</motion.p>
+          <motion.p variants={textAnim} >I became a producer/composer/arranger</motion.p>
+          <motion.p variants={textAnim} >and worked with many different genres.</motion.p>
+        </motion.div>
         <Image src={pic2} alt="" />
       </AboutSection>
       <AboutSection>
@@ -39,7 +54,7 @@ const AboutMe = () => {
         </div>
       </AboutSection>
       <SkillsSection>
-      <button>See my portfolio</button>
+      <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO' rel="noreferrer" target="_blank" ><button>See my portfolio</button></a>
         <div className="skills-sub-section">
           <h2>My skills</h2>
         </div>
@@ -59,11 +74,10 @@ const AboutMe = () => {
           <h3>Miscellaneous</h3>
           <p>I speak french, english and spanish</p>
           <p>I'm willing to work on remote or to move for short to mid-terms missions.</p>
-          <p>I have a driver licence and a vehicle</p>
           <div className="line"></div>
         </div>
       </SkillsSection>
-    </>
+    </motion.div>
   );
 }
 

@@ -1,8 +1,11 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import {AboutSection} from '../styles';
+import {pageAnimation} from '../animation'
 
 const Contact = () => {
   return ( 
+    <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
     <ContactSection>
       <h1>De Zaldua Samuel</h1>
       <p>31/08/1987</p>
@@ -11,6 +14,7 @@ const Contact = () => {
       <a href="mailto: samuel.dezaldua@gmail.com"><strong>samuel.dezaldua@gmail.com</strong></a>
       <p></p>
     </ContactSection>
+    </motion.div>
    );
 }
  

@@ -8,16 +8,18 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
   background: rgb(55,71,214);
-background: linear-gradient(90deg, rgba(55,71,214,1) 0%, rgba(0,164,255,1) 100%);
+  background: linear-gradient(90deg, rgba(55,71,214,1) 0%, rgba(0,164,255,1) 100%);
   font-family: 'Poppins', sans-serif;
   line-height: 1.2rem;
-  letter-spacing: .1rem
+  letter-spacing: .1rem;
+  overflow-x: hidden;
 }
 h2 {
   font-weight: lighter;
   font-size: 4rem;
   color: white;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 p{
   padding: 1.5rem 0rem;
@@ -45,6 +47,16 @@ button{
 a{
   color: white;
 }
+.hidden{
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px){
+  img{
+    display: none;
+  }
+}
 `;
+
 
 export default GlobalStyle;
