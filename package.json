@@ -2,7 +2,7 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Samdez.github.io/Samdez/cv-react/tree/master",
+  "homepage": "https://Samdez.github.io/Samdez/cv-react/tree/master/public",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
