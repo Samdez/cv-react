@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/Samdez/cv-react/tree/master/static/js/main.1db0babb.chunk.js",
-    "main.js.map": "/Samdez/cv-react/tree/master/static/js/main.1db0babb.chunk.js.map",
-    "runtime-main.js": "/Samdez/cv-react/tree/master/static/js/runtime-main.37bce3bc.js",
-    "runtime-main.js.map": "/Samdez/cv-react/tree/master/static/js/runtime-main.37bce3bc.js.map",
-    "static/js/2.50f61eb3.chunk.js": "/Samdez/cv-react/tree/master/static/js/2.50f61eb3.chunk.js",
-    "static/js/2.50f61eb3.chunk.js.map": "/Samdez/cv-react/tree/master/static/js/2.50f61eb3.chunk.js.map",
-    "static/js/3.af3e04bb.chunk.js": "/Samdez/cv-react/tree/master/static/js/3.af3e04bb.chunk.js",
-    "static/js/3.af3e04bb.chunk.js.map": "/Samdez/cv-react/tree/master/static/js/3.af3e04bb.chunk.js.map",
-    "index.html": "/Samdez/cv-react/tree/master/index.html",
-    "static/js/2.50f61eb3.chunk.js.LICENSE.txt": "/Samdez/cv-react/tree/master/static/js/2.50f61eb3.chunk.js.LICENSE.txt",
-    "static/media/meme404.dbed32a2.jpg": "/Samdez/cv-react/tree/master/static/media/meme404.dbed32a2.jpg",
-    "static/media/pic2.4bf91709.jpg": "/Samdez/cv-react/tree/master/static/media/pic2.4bf91709.jpg"
+    "main.js": "/Samdez/cv-react/tree/master/public/static/js/main.1db0babb.chunk.js",
+    "main.js.map": "/Samdez/cv-react/tree/master/public/static/js/main.1db0babb.chunk.js.map",
+    "runtime-main.js": "/Samdez/cv-react/tree/master/public/static/js/runtime-main.ab44c1ba.js",
+    "runtime-main.js.map": "/Samdez/cv-react/tree/master/public/static/js/runtime-main.ab44c1ba.js.map",
+    "static/js/2.4f18c305.chunk.js": "/Samdez/cv-react/tree/master/public/static/js/2.4f18c305.chunk.js",
+    "static/js/2.4f18c305.chunk.js.map": "/Samdez/cv-react/tree/master/public/static/js/2.4f18c305.chunk.js.map",
+    "static/js/3.af3e04bb.chunk.js": "/Samdez/cv-react/tree/master/public/static/js/3.af3e04bb.chunk.js",
+    "static/js/3.af3e04bb.chunk.js.map": "/Samdez/cv-react/tree/master/public/static/js/3.af3e04bb.chunk.js.map",
+    "index.html": "/Samdez/cv-react/tree/master/public/index.html",
+    "static/js/2.4f18c305.chunk.js.LICENSE.txt": "/Samdez/cv-react/tree/master/public/static/js/2.4f18c305.chunk.js.LICENSE.txt",
+    "static/media/meme404.dbed32a2.jpg": "/Samdez/cv-react/tree/master/public/static/media/meme404.dbed32a2.jpg",
+    "static/media/pic2.4bf91709.jpg": "/Samdez/cv-react/tree/master/public/static/media/pic2.4bf91709.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.37bce3bc.js",
-    "static/js/2.50f61eb3.chunk.js",
+    "static/js/runtime-main.ab44c1ba.js",
+    "static/js/2.4f18c305.chunk.js",
     "static/js/main.1db0babb.chunk.js"
   ]
 }
