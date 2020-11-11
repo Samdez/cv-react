@@ -1,4 +1,5 @@
 import {pageAnimation} from '../animation';
+import {useScroll} from './useScroll';
 import { AboutSection, IconContainer, Image, TitlesList } from '../styles'
 import meme404 from '../img/meme404.jpg'
 import styled from 'styled-components';
@@ -6,22 +7,26 @@ import { FiGithub, FiInstagram } from 'react-icons/fi';
 import { FaSpotify } from 'react-icons/fa';
 import {GiDiploma} from 'react-icons/gi';
 import { motion } from 'framer-motion';
+import {fade} from '../animation'
 
 
 const Experience = () => {
+
+  const [element, controls] = useScroll();
+
   return (
     <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-      <ExperienceSection>
+      <ExperienceSection variants={fade} initial='hidden' animate='show' className='hidden'>
         <Meme src={meme404} alt="" />
         <div>
           <h2>As a programmer</h2>
           <p>After my training at the Wild Code School,</p>
           <p>I will be doing a 4 month internship at the web agency Redmoot.</p>
           <p>In the meantime, you can check my projects on Github : </p>
-          <div className="center"><FiGithub style={{ fontSize: '4rem' }} /></div>
+          <a href="https://github.com/Samdez" rel="noreferrer" target="_blank" className="center"><FiGithub style={{ fontSize: '4rem' }} /></a>
         </div>
       </ExperienceSection>
-      <ExperienceSection>
+      <ExperienceSection ref={element} variants={fade} initial='hidden' animate={controls}>
         <div>
           <h2>As a musician and a teacher</h2>
           <p>I've accumulated over 10M streams with my solo project Otaam over the years</p>
@@ -63,6 +68,7 @@ const Experience = () => {
             <p>(Toulouse 3)</p>
           </li>
         </TitlesList>
+        <div></div>
       </div>
     </motion.div>
   );

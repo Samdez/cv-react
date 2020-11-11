@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
 
-export const AboutSection = styled.div`
+export const AboutSection = styled(motion.div)`
 display: flex;
 min-height: 80vh;
 align-items: center;
@@ -16,7 +16,7 @@ export const Image = styled(motion.img)`
   border-radius: 5%;
 `;
 
-export const IconsContainer = styled.div`
+export const IconsContainer = styled(motion.div)`
 display: flex;
 justify-content: space-around;
 width: 40%;
@@ -81,6 +81,7 @@ flex-direction: column;
 align-items: flex-start;
 list-style: none;
 margin-left: 30%;
+margin-bottom: 30vh;
 h3{
   color: white;
 }
