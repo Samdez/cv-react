@@ -42,6 +42,9 @@ button{
     color: rgb(55,71,214);
   }
 }
+a{
+  color: white;
+}
 `;
 
 export default GlobalStyle;

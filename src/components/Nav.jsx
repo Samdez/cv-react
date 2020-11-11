@@ -3,15 +3,15 @@ import { Navbar, StyledLink } from '../styles'
 const Nav = () => {
   return (
     <Navbar>
-      <ul className="nav-list">
-        <li className="li-item">
+      <ul>
+        <li>
           <StyledLink to='/'>About me</StyledLink>
         </li>
-        <li className="li-item">
+        <li>
           <StyledLink to='/experience'>Experience</StyledLink>
         </li>
-        <li className="li-item">
-        <StyledLink to='/contact'>Contact</StyledLink>  
+        <li>
+        <StyledLink to='/contact'>Contact/Info</StyledLink>  
         </li>
       </ul>
     </Navbar>
