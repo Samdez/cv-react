@@ -1,7 +1,10 @@
 
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
+import {skillsAnimation} from '../animation';
 import { AboutSection } from '../styles';
 import Toggle from './Toggle';
+import {AnimateSharedLayout} from 'framer-motion';
 
 const Skills = () => {
   return (
@@ -10,28 +13,31 @@ const Skills = () => {
       <div className="skills-sub-section">
         <h2>My skills</h2>
       </div>
+      <AnimateSharedLayout>
       <div className="skills-sub-section">
         <Toggle title='Programming languages and frameworks/libraries'>
-          <p className="skill-content">I studied Javascript, React, and NodeJS.</p>
+          <motion.p variants={skillsAnimation}  className="skill-content">I studied Javascript, React, and NodeJS.</motion.p>
         </Toggle>
       </div>
-      <div >
-        <Toggle title='Soft Skills' className="skills-sub-section">
-          <div className="skill-content">
-            <p>During my training, I worked on several projects using the AGILE methodology.</p>
-            <p>I've worked as a solo artist and in different professional bands,</p>
-            <p>which taught me how to balance independent work and teamwork.</p>
-          </div>
+      <div className="skills-sub-section">
+        <Toggle title='Soft Skills'>
+          <motion.div variants={skillsAnimation}>
+            <motion.p variants={skillsAnimation}  className="skill-content">During my training, I worked on several projects using the AGILE methodology.</motion.p>
+            <motion.p variants={skillsAnimation}  className="skill-content">I've worked as a solo artist and in different professional bands,</motion.p>
+            <motion.p variants={skillsAnimation}  className="skill-content">which taught me how to balance independent work and teamwork.</motion.p>
+          </motion.div>
         </Toggle>
       </div>
       <div className="skills-sub-section">
         <Toggle title="Miscellaneous">
-        <div className="skill-content">
-          <p>I speak french, english and spanish</p>
-          <p>I'm willing to work on remote or to move for short to mid-terms missions.</p>
-        </div>
+        <motion.div variants={skillsAnimation} className="skill-content">
+          <motion.p variants={skillsAnimation}>I speak french, english and spanish</motion.p>
+          <motion.p variants={skillsAnimation}>I'm willing to work on remote or to move for short to mid-terms missions.</motion.p>
+        </motion.div>
         </Toggle>
       </div>
+      </AnimateSharedLayout>
+      <div></div>
     </SkillsSection>
   );
 }
@@ -49,6 +55,7 @@ flex-direction: column;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
   }
   h2{
     margin-bottom: 6rem;
