@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="https://Samdez.github.io/cv-react">
+    <Router>
     <App />
     </Router>
   </React.StrictMode>,
