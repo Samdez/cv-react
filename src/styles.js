@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 export const AboutSection = styled.div`
 display: flex;
@@ -8,7 +9,7 @@ align-items: center;
 justify-content: space-around;
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   width: 40%;
   height: 60vh;
   object-fit: cover;
