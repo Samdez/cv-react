@@ -14,6 +14,7 @@ export const Image = styled(motion.img)`
   height: 60vh;
   object-fit: cover;
   border-radius: 5%;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .5);
 `;
 
 export const IconsContainer = styled(motion.div)`
