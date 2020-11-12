@@ -21,6 +21,9 @@ h2 {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+h4{
+  color: white;
+}
 p{
   padding: 1.5rem 0rem;
   color: white;

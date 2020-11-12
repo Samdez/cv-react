@@ -35,11 +35,11 @@ const Experience = () => {
           <p>and in music schools (La note bleue, Vacquiers (2014/15); EMIVA, Auterive (2015/16))</p>
         </div>
         <IconContainer>
-          <FaSpotify style={{ fontSize: '4rem' }} />
+          <a href="https://open.spotify.com/artist/0yABOXFZ5fJ1KyoXXgj5B0" rel="noreferrer" target="_blank"><FaSpotify style={{ fontSize: '4rem' }} /></a>
           <h4>Listen</h4>
         </IconContainer>
         <IconContainer>
-          <FiInstagram style={{ fontSize: '4rem' }} />
+          <a href="https://www.instagram.com/otaambeatmaker/?hl=fr" rel="noreferrer" target="_blank"><FiInstagram style={{ fontSize: '4rem' }} /></a>
           <h4>Watch</h4>
         </IconContainer>
       </ExperienceSection>
