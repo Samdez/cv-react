@@ -35,21 +35,21 @@ const AboutMe = () => {
       <AboutSection>
           <IconsContainer ref={element} variants={container} initial='hidden' animate={controls}>
             <IconsSubContainer>
-              <div>
+              <div style={{width: '50%'}}>
                 <IoLogoJavascript style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setJsLogo(!jsLogo)} />
                 {jsLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >Javascript</motion.p>}
               </div>
-              <div>
+              <div style={{width: '50%'}}>
                 <DiReact style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setReactLogo(!reactLogo)} />
                 {reactLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >React</motion.p>}
               </div>
             </IconsSubContainer>
             <IconsSubContainer>
-              <div>
+              <div style={{width: '50%'}}>
                 <FiGithub style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setGithubLogo(!githubLogo)}/>
                 {githubLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >Github</motion.p>}
               </div>
-              <div>
+              <div style={{width: '50%'}}>
                 <FaNode style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setNodeLogo(!nodeLogo)}/>
                 {nodeLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >NodeJS</motion.p>}
               </div>

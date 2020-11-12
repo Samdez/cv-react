@@ -26,6 +26,7 @@ export const IconsSubContainer = styled.div`
 display: flex;
 justify-content: space-around;
 width: 50%;
+height: 10vh;
 `;
 
 export const Navbar = styled.div`
