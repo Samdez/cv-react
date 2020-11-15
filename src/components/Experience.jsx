@@ -75,7 +75,7 @@ const Experience = () => {
 }
 
 const Meme = styled(Image)`
-object-fit: none;
+object-fit: contain;
 `;
 const ExperienceSection = styled(AboutSection)`
   .center{
